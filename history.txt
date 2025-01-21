@@ -1,0 +1,53 @@
+  501  cd git/
+  502  git clone git@github.com:chendaniely/2025-01-21-branch_conflict.git
+  503  cd 2025-01-21-branch_conflict/
+  504  git log --oneline
+  505  ls
+  506  ls -a
+  507  git switch -c bash_script_1
+  508  git status
+  509  git log --oneline
+  510  code script.sh
+  511  bash script.sh
+  512  git status
+  513  git add script.sh
+  514  git commt -m "create a bash script"
+  515  git commit -m "create a bash script"
+  516  git push origin bash_script_1
+  517  history
+  518  git log --oneline --graph --all
+  519  git switch main
+  520  ls
+  521  git switch -c b2
+  522  git log --oneline --graph --all
+  523  code script.sh
+  524  code README.md
+  525  git status
+  526  ls -a
+  527  git add .
+  528  git status
+  529  git commit -m "talk about switch -c with a new file"
+  530  git push origin b2
+  531  git log --oneline --graph --all
+  532  git switch main
+  533  git pull origin main
+  534  git log --oneline --graph --all
+  535  git switch b2
+  536  git log --oneline --graph --all
+  537  git rebase main
+  538  git status
+  539  git add script.sh
+  540  git status
+  541  git rebase --continue
+  542  git status
+  543  git log --oneline --graph --all
+  544  git push origin b2
+  545  git push --force origin b2
+  546  history
+  547  git swich main
+  548  git pull origin main
+  549  history
+  550  history
+  551  git status
+  552  git checkout main
+  553  history > history.txt
